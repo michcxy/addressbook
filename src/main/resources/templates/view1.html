@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body data-th-object="${user}">
+    <h1>Your details</h1>
+    <table>
+        <tr>
+            <td>User Id : </td>
+            <td><span data-th-text="*{userId}"></td>
+        </tr>
+        <tr>
+            <td>Name : </td>
+            <td><span data-th-text="*{name}"></td>
+        </tr>
+        <tr>
+            <td>Email :</td>
+            <td><span data-th-text="*{email}"></span></td>
+        </tr>
+        <tr>
+            <td>Phone :</td>
+            <td><span data-th-text="*{phone}"></span></td>
+        </tr>
+        <tr>
+            <td>DOB :</td>
+            <td><span data-th-text="*{dob}"></span></td>
+        </tr>
+        <tr>
+            <td>Age :</td>
+            <td><span data-th-text="*{getAge()}"></span></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
